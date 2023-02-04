@@ -77,10 +77,10 @@
                     </div>
                     <div class="feature_detail-box">
                         <h4>
-                          @feature.Title 
+                            @feature.Title
                         </h4>
                         <p>
-                           @feature.Content 
+                            @feature.Content
                         </p>
                     </div>
                 </div>
@@ -109,25 +109,24 @@
             </div>
             <div class="col-md-6 form_bg px-0">
                 <div class="col-md-10 px-0">
-                    <form action="" method="post">
+                    <form  method="post" asp-controller="Home" asp-action="Index">
                         <div class="contact_form-container">
                             <div>
-                                <div> 
-                                    <input type="text" placeholder=" Name"/>
+                                <div>
+                                    <input type="text" placeholder=" Name" name="UserName" required/>
                                 </div>
                                 <div>
-                                    <input type="email" placeholder="  Email"/>
+                                    <input type="email" name="UserEmail" placeholder="  Email" required/>
                                 </div>
 
                                 <div>
-                                    <input type="text" placeholder=" Phone Number"/>
+                                    <input type="text" placeholder=" Phone Number" name="UserPhone" required/>
                                 </div>
-
                                 <div>
                                     <input
                                         type="text"
                                         placeholder="Message"
-                                        class="message_input"/>
+                                        class="message_input" name="UserMessage" />
                                 </div>
                                 <div class="mt-3 d-flex justify-content-end">
                                     <button type="submit">
