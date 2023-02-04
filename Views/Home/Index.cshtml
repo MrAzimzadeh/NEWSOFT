@@ -1,0 +1,378 @@
+﻿@model HomeVM
+<section class="about_section layout_padding">
+    <div class="container">
+        <h2 class="text-uppercase">
+            How it works
+        </h2>
+    </div>
+
+    <div class="container">
+        <div class="about_card-container layout_padding2-top">
+            @foreach (var abouts in   Model.Abouts)
+            {
+                <div class="about_card">
+                    <div class="about-detail">
+                        <div class="about_img-container">
+                            <div class="about_img-box">
+                                <img src="images/@abouts.PhotoUrl" alt=""/>
+                            </div>
+                        </div>
+                        <div class="card_detail-ox">
+                            <h4>
+                                @abouts.Title
+                            </h4>
+                            <p>
+                                @abouts.SubTitle
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- end about section -->
+
+<!-- who section -->
+<section class="who_section">
+    <div class="container who_container">
+        <div class="who_img-box">
+            <img src="images/@Model.Who.PhotoUrl" alt=""/>
+        </div>
+        <div class="who_deail-box">
+            <h2>
+                @Model.Who.Title
+            </h2>
+            <p>
+                @Model.Who.Content
+            </p>
+            <div>
+                <a href="">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end who section -->
+
+<!-- feature section  -->
+<section class="feature_section layout_padding">
+    <div class="container">
+        <h2 class="text-uppercase">
+            Our Features
+        </h2>
+    </div>
+    <div class="">
+        <div class="feature_card-container layout_padding2">
+            @foreach (var feature in Model.Features)
+            {
+                <div class="feature_card">
+                    <div class="feature_img-container">
+                        <div class="feature_img-box">
+                            <img src="images/@feature.PhotoUrl" alt=""/>
+                        </div>
+                    </div>
+                    <div class="feature_detail-box">
+                        <h4>
+                          @feature.Title 
+                        </h4>
+                        <p>
+                           @feature.Content 
+                        </p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- end feature section -->
+
+<!-- contact section -->
+<section class="contact_section ">
+    <div class="container d-flex justify-content-center">
+        <h2 class="text-uppercase">
+            Get in touch
+        </h2>
+    </div>
+    <div class="container-fluid layout_padding-top">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-md-10 offset-md-2">
+                    <div class="contact_img-box">
+                        <img src="images/form-img.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 form_bg px-0">
+                <div class="col-md-10 px-0">
+                    <form action="" method="post">
+                        <div class="contact_form-container">
+                            <div>
+                                <div>
+                                    <input type="text" placeholder=" Name"/>
+                                </div>
+                                <div>
+                                    <input type="email" placeholder="  Email"/>
+                                </div>
+
+                                <div>
+                                    <input type="text" placeholder=" Phone Number"/>
+                                </div>
+
+                                <div>
+                                    <input
+                                        type="text"
+                                        placeholder="Message"
+                                        class="message_input"/>
+                                </div>
+                                <div class="mt-3 d-flex justify-content-end">
+                                    <button type="submit">
+                                        Send
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end contact section -->
+
+<!-- info section -->
+<section class="info_section layout_padding">
+<div class="container info_content">
+<div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="d-flex">
+                <h5>
+                    New software
+                </h5>
+            </div>
+            <div class="d-flex ">
+                <ul>
+                    <li>
+                        <a href="">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            About services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            About Departments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                    <li>
+                        <a href="">
+                            Loram ipusm
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Loram ipusm
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Loram ipusm
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Loram ipusm
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Loram ipusm
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="d-flex">
+                <h5>
+                    The Services
+                </h5>
+            </div>
+            <div class="d-flex ">
+                <ul>
+                    <li>
+                        <a href="">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            About services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            About Departments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                    <li>
+                        <a href="">
+                            Lorem ipsum dolor
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            sit amet, consectetur
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            adipiscing elit,
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            sed do eiusmod
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            tempor incididunt
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="d-flex">
+                <h5>
+                    Contact Us
+                </h5>
+            </div>
+            <div class="d-flex ">
+                <ul>
+                    <li>
+                        <a href="">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            About services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            About Departments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                    <li>
+                        <a href="">
+                            Lorem ipsum
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            dolor sit amet,
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            consectetur
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            adipiscing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            elit, sed do eiusmod
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div
+    class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
+    <div class="social-box">
+        <a href="">
+            <img src="images/fb.png" alt=""/>
+        </a>
+
+        <a href="">
+            <img src="images/twitter.png" alt=""/>
+        </a>
+        <a href="">
+            <img src="images/linkedin1.png" alt=""/>
+        </a>
+        <a href="">
+            <img src="images/instagram1.png" alt=""/>
+        </a>
+    </div>
+    <div class="form_container mt-5">
+        <form action="">
+            <label for="subscribeMail">
+                Newsletter
+            </label>
+            <input
+                type="email"
+                placeholder="Enter Your email"
+                id="subscribeMail"/>
+            <button type="submit">
+                Subscribe
+            </button>
+        </form>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- end info section -->
